@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".contenidoActivity">
+
+
+    <FrameLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/backgroundHeader"
+            style="@style/LayoutContenido"
+            android:layout_height="229dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/beach" />
+
+
+        <LinearLayout
+            android:id="@+id/headerContent"
+            style="@style/LayoutMatchContenido"
+            android:layout_height="226dp"
+            android:gravity="center|start"
+            android:orientation="horizontal">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="0dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/logo"
+                app:civ_border_color="#EEE"
+                app:civ_border_width="0dp"
+                app:civ_shadow="true"
+                app:civ_shadow_color="#FFF"
+                app:civ_shadow_radius="0" />
+
+            <TextView
+                android:id="@+id/headerText"
+                style="@style/LayoutContenido"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="@font/frenchy"
+                android:text="@string/texto6"
+                android:textColor="@android:color/background_light"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/frenchy" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tvContent"
+            style="@style/LayoutContenido"
+            android:singleLine="false"
+            android:text="@string/material" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <Button
+            android:id="@+id/btnStay"
+            style="@style/LayoutContenido"
+            android:layout_weight="1"
+            android:drawableBottom="@color/colorPrimaryMnu"
+            android:text="@string/texto9"
+            android:textColor="@color/colorPrimaryMnu" />
+
+        <Button
+            android:id="@+id/btnLeave"
+            style="@style/LayoutContenido"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryMnu"
+            android:text="@string/texto10"
+            android:textColor="@android:color/background_light" />
+    </LinearLayout>
+
+</LinearLayout>

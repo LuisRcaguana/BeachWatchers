@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Beach Watchers</string>
+    <string name="texto1">Beach Watchers</string>
+    <string name="textoo2">around you</string>
+    <string name="texto4">Iniciar Sesion</string>
+    <string name="usuario">Usuario</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="iniciar">Entrar</string>
+    <string name="registrar">Si no eres usuario registrate</string>
+    <string name="confi">Configuracion</string>
+    <string name="ACTION_RESTORED">Remember, there is NoPlanetB!!!!</string>
+    <string name="texto6">birds are watching you</string>
+    <string name="material">A material metaphor is the unifying theory of a rationalized space and a system of motion. The material is grounded in tactile reality, inspired by the study of paper and ink, yet technologically advanced and open to imagination and magic.
+Surfaces and edges of the material provide visual cues that are grounded in reality. The use of familiar tactile attributes helps users quickly understand affordances. Yet the flexibility of the material creates new affordances that supersede those in the physical world, without breaking the rules of physics. The fundamentals of light, surface, and movement are key to conveying how objects move, interact, and exist in space and in relation to each other. </string>
+    <string name="texto9">Water</string>
+    <string name="texto10">sand</string>
+
+</resources>
